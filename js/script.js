@@ -40,8 +40,8 @@ if( computerMove == 'kamień' && playerMove == 'papier'){
 } 
 else if (PlayerMove == ComputerMove) {
         printMessage('Oj remis!'); }
-
-else { printMessage('Zagrałem ' + ComputerMove + ', a Ty ' + PlayerMove);
+    }
+else { printMessage('Zagrałem ' + ComputerMove + ', a Ty ' + PlayerMove);}
  
 const displayResult = function (argPlayerMove, argComputerMove) {
     console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
@@ -57,3 +57,16 @@ const displayResult = function (argPlayerMove, argComputerMove) {
       printMessage('Przegrywasz :( Spróbuj jeszcze raz!');
   }
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+}
+buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
+buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
+buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
+buttonRock.addEventListener('click', function() {
+  buttonClicked('kamień');
+});
+buttonPaper.addEventListener('click', function() {
+  buttonClicked('papier');
+});
+buttonScissors.addEventListener('click', function() {
+  buttonClicked('nożyce');
+});
