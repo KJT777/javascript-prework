@@ -1,3 +1,10 @@
+const buttonRock = document.getElementById('button-rock'),
+      buttonPaper = document.getElementById('button-paper'),
+      buttonScissors = document.getElementById('button-scissors');
+const buttonClicked = function(argButtonName) {
+  clearMessages();
+  console.log(argButtonName + ' został kliknięty');
+
 const getMoveName = function (argMoveId) {
     console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
     if (argMoveId == 1) {
